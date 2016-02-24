@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+var num1;
+var num2; 
+var answer;
+var operators;
+num1 =  Number(process.argv[2]);
+num2 = Number(process.argv[4]);
+operators = process.argv[3];
+
+switch (operators)
+{
+	case "plus":
+	answer = num1 + num2;
+	console.log("equals " + answer);
+	break;
+
+	case "minus":
+	answer = num1 - num2;
+	console.log("equals " + answer);
+	break;
+
+	case "times":
+	answer = num1 * num2;
+	console.log("equals " + answer);
+	break;
+
+	case "dividedby":
+	answer = num1 / num2;
+	console.log("equals " + answer);
+	break;
+
+	default:
+	console.log("Error: Input number operation number.");
+	break;
+}
